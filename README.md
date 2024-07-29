@@ -39,3 +39,25 @@ This function checks if a given position (x, y) is within the bounds of the ches
 In the diagram below only 6 options are there for the knight , the other two squares are outside the board . Hence those two options are invalid .
 
 ![image](https://github.com/user-attachments/assets/7c07032c-4bda-4499-a7e2-3127f830226d)
+
+```console
+```cpp
+bool solveKTUtil(int x, int y, int movei, vector<vector<int>>& board) {
+    int next_x, next_y;
+    if (movei == N * N) 
+        return true;
+
+    for (int k = 0; k < 8; k++) {
+        next_x = x + moveX[k];
+        next_y = y + moveY[k];
+        if (isSafe(next_x, next_y, board)) {
+            board[next_x][next_y] = movei;
+            if (solveKTUtil(next_x, next_y, movei + 1, board))
+                return true;
+            else
+                board[next_x][next_y] = -1; 
+        }
+    }
+    return false;
+}
+```
