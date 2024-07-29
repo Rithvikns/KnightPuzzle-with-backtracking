@@ -4,3 +4,10 @@ The below diagram represents the knight puzzle model , The knight has to travel 
 ![image](https://github.com/user-attachments/assets/77a4d7b0-f939-4f50-be3c-2faeeb8d9e5c)
 
 Today , let's build a code to complete this puzzle .
+
+"""#include <iostream>
+#include <vector>
+
+using namespace std;"""
+
+
