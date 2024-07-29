@@ -15,7 +15,7 @@ Today, let's build a code to complete this puzzle.
 using namespace std;```
 
 Let's include the libraries and the namespace .
-
+# Tasks of the Assignment
 ```cpp
 int moveX[8] = {2, 1, -1, -2, -2, -1, 1, 2};
 int moveY[8] = {1, 2, 2, 1, -1, -2, -2, -1};```
