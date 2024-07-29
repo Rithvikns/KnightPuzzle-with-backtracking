@@ -40,8 +40,10 @@ In the diagram below only 6 options are there for the knight , the other two squ
 
 ![image](https://github.com/user-attachments/assets/7c07032c-4bda-4499-a7e2-3127f830226d)
 
+
+# Task3 : A Recursive function that attempts to solve the Knight's Tour problem.
+
 ```console
-```cpp
 bool solveKTUtil(int x, int y, int movei, vector<vector<int>>& board) {
     int next_x, next_y;
     if (movei == N * N) 
@@ -61,3 +63,24 @@ bool solveKTUtil(int x, int y, int movei, vector<vector<int>>& board) {
     return false;
 }
 ```
+Here a 2D vector is used to store the chess board data , and in the function argument we are referencing the chess board instead of duplicating since all the function should work on a single chess board .
+movei is the current move number.
+If movei equals N * N, all squares have been visited, and the function returns true.
+The function tries all possible moves from the current position (x, y) using the moveX and moveY arrays.
+For each valid move, it marks the next position with the current move number, calls itself recursively with the new position and incremented move number.
+If a valid path is found, it returns true. Otherwise, it backtracks by resetting the current position to -1.
+
+The recursive function calculates the result till the end meaning it does all possible recursive calls and if the result is true it updates the initial call and all the recursive call with the result else it sets as -1 to the initial number and moves on to the next possible option .
+## Algorithm Overview
+
+### Initial Call
+Start from an initial position on the board.
+
+### Recursive Calls
+Try all possible knight moves from the current position.
+
+### Base Case
+If all squares on the board have been visited (i.e., `movei == N * N`), return `true`.
+
+### Backtracking
+If a move does not lead to a solution, backtrack by resetting the board position and try the next possible move.
