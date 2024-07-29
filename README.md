@@ -150,3 +150,8 @@ Below is the result of the Knight's Tour:
 56 43 52 3 22 13 24 5
 51 46 55 44 53 4 21 12
 ```
+
+# More Information :
+You can try and complete the knight's tour puzzle in this link , it also allows you to take more steps and complete the puzzle .
+https://www.mathsisfun.com/games/knights-move-2.html .
+
