@@ -36,6 +36,6 @@ bool isSafe(int x, int y, vector<vector<int>>& board) {
 
 ```
 This function checks if a given position (x, y) is within the bounds of the chessboard and has not been visited yet (indicated by -1). 
-In the diagram below only 6 options are there for the knight , the other two squares are outside the board .
+In the diagram below only 6 options are there for the knight , the other two squares are outside the board . Hence those two options are invalid .
 
 ![image](https://github.com/user-attachments/assets/7c07032c-4bda-4499-a7e2-3127f830226d)
