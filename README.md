@@ -11,7 +11,6 @@ Today, let's build a code to complete this puzzle.
 ```cpp
 #include <iostream>
 #include <vector>
-
 using namespace std;```
 
 Let's include the libraries and the namespace .
