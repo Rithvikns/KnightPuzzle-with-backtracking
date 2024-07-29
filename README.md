@@ -86,3 +86,31 @@ If all squares on the board have been visited (i.e., `movei == N * N`), return `
 If a move does not lead to a solution, backtrack by resetting the board position and try the next possible move.
 
 ###  when return true is executed in the base case or within the loop, it will not only exit the current recursive call but also immediately break out of the loop and propagate the true value up the call stack. This effectively stops all further processing and recursive calls.
+
+
+# Task4 : Function to Initiate and Solve the Knight's Tour Problem
+```console
+bool solveKT() {
+    
+    vector<vector<int>> board(N, vector<int>(N, -1));
+
+
+    int startX = 0;
+    int startY = 0;
+
+  
+    board[startX][startY] = 0;
+
+
+    if (!solveKTUtil(startX, startY, 1, board)) {
+        cout << "Solution does not exist" << endl;
+        return false;
+    } else
+        printSolution(board);
+
+    return true;
+}
+```
+This function initializes the chessboard and starts the Knight's Tour from the top-left corner (0, 0).
+It calls solveKTUtil with the initial position and the first move number.
+If a solution is found, it prints the board using printSolution. Otherwise, it indicates that no solution exists.
