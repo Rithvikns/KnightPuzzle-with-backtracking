@@ -7,6 +7,15 @@ The diagram below represents the knight puzzle model. The knight has to travel t
 ![Knight Puzzle](https://github.com/user-attachments/assets/77a4d7b0-f939-4f50-be3c-2faeeb8d9e5c)
 
 Today, let's build a code to complete this puzzle.
+```console
+$ man ip link
+$ man ip address
+$ man ip netns
+$ man netcat
+$ man curl
+$ man tcpdump
+$ man tshark
+```
 
 ```cpp
 #include <iostream>
