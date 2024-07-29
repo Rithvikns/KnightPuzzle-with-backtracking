@@ -12,9 +12,14 @@ Today, let's build a code to complete this puzzle.
 #include <iostream>
 #include <vector>
 
-using namespace std;
+using namespace std;'''
 
+Let's include the libraries and the namespace .
 
 ```cpp
 int moveX[8] = {2, 1, -1, -2, -2, -1, 1, 2};
-int moveY[8] = {1, 2, 2, 1, -1, -2, -2, -1};
+int moveY[8] = {1, 2, 2, 1, -1, -2, -2, -1};'''
+
+This lines are used to represent the next move of the knight using x axis and y axis , there are only 8 moves possible for the knight to move .
+![image](https://github.com/user-attachments/assets/c27c4d09-0ec6-4e24-a0fa-7e2eb6072085)
+
