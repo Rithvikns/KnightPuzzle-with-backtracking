@@ -114,3 +114,38 @@ bool solveKT() {
 This function initializes the chessboard and starts the Knight's Tour from the top-left corner (0, 0).
 It calls solveKTUtil with the initial position and the first move number.
 If a solution is found, it prints the board using printSolution. Otherwise, it indicates that no solution exists.
+
+
+# Task5 : Print Solution function .
+```console
+void printSolution(vector<vector<int>>& board) {
+    for (int x = 0; x < N; x++) {
+        for (int y = 0; y < N; y++)
+            cout << board[x][y] << " ";
+        cout << endl;
+    }
+}
+```
+
+This function is used to print the output if the solution exists .
+
+# Task6 : main block .
+```console
+int main() {
+    solveKT();
+    return 0;
+}
+```
+
+# Output :
+
+Below is the result of the Knight's Tour:
+
+0 59 38 33 30 17 8 63
+37 34 31 60 9 62 29 16
+58 1 36 39 32 27 18 7
+35 48 41 26 61 10 15 28
+42 57 2 49 40 23 6 19
+47 50 45 54 25 20 11 14
+56 43 52 3 22 13 24 5
+51 46 55 44 53 4 21 12
