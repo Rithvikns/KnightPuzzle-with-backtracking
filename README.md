@@ -84,3 +84,5 @@ If all squares on the board have been visited (i.e., `movei == N * N`), return `
 
 ### Backtracking
 If a move does not lead to a solution, backtrack by resetting the board position and try the next possible move.
+
+###  when return true is executed in the base case or within the loop, it will not only exit the current recursive call but also immediately break out of the loop and propagate the true value up the call stack. This effectively stops all further processing and recursive calls.
