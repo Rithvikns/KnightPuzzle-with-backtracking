@@ -6,6 +6,7 @@ The below diagram represents the knight puzzle model , The knight has to travel 
 Today , let's build a code to complete this puzzle .
 
 """#include <iostream>
+
 #include <vector>
 
 using namespace std;"""
