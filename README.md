@@ -15,7 +15,8 @@ using namespace std;`
 Let's include the libraries and the namespace .
 
 
-# Task1 : List out the possible squares for the Knight
+# Task1 : List out the possible squares for the Knight next move
+
 ```console
 int moveX[8] = {2, 1, -1, -2, -2, -1, 1, 2};
 int moveY[8] = {1, 2, 2, 1, -1, -2, -2, -1};`
